@@ -1,8 +1,12 @@
 # Laravel Mix Filename Versioning
 
+### Installation
+
 ```
 npm install --save-dev laravel-mix-filename-versioning
 ```
+
+### Usage
 
 In your webpack.mix.js file:
 
@@ -11,9 +15,15 @@ In your webpack.mix.js file:
 let LaravelMixFilenameVersioning = require('laravel-mix-filename-versioning');
 
 // ... at the end of the file
-mix.webpackConfig({
-  plugins: [
-    new LaravelMixFilenameVersioning
-  ]
-});
+if (mix.inProduction()) {
+  mix.webpackConfig({
+    plugins: [
+      new LaravelMixFilenameVersioning
+    ]
+  });
+}
 ```
+
+### Output
+
+<img src="https://raw.githubusercontent.com/ralphschindler/laravel-mix-filename-versioning/HEAD/output.png" />
