@@ -1,7 +1,7 @@
 const fs = require('fs')
 const path = require('path');
 
-export default class LaravelMixFilenameVersioning {
+class LaravelMixFilenameVersioning {
   apply (compiler) {
     compiler.plugin('done', function(stats) {
       const newAssets = {};
@@ -34,3 +34,5 @@ export default class LaravelMixFilenameVersioning {
     });
   }
 }
+
+module.exports = LaravelMixFilenameVersioning;
