@@ -1,6 +1,6 @@
 {
   "name": "laravel-mix-filename-versioning",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "This plugin provides filename based versioning for laravel-mix >2.0",
   "main": "index.js",
   "scripts": {
