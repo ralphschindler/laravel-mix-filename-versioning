@@ -1,11 +1,13 @@
 {
   "name": "laravel-mix-filename-versioning",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "This plugin provides filename based versioning for laravel-mix >2.0",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "homepage": "https://github.com/ralphschindler/laravel-mix-filename-versioning",
+  "author": "ralphschindler",
+  "license": "UNLICENSE",
+  "peerDependecies": {
+      "laravel-mix": "^2.0.0"
   },
-  "author": "",
-  "license": "ISC"
+  "keywords": ["laravel", "mix", "webpack", "versioning", "manifest"]
 }
